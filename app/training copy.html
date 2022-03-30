@@ -5,26 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki Tests</title>
+    <link rel="stylesheet" href="css/training.css">
 
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="appearance-none"> <!--gap-8 ?-->
+<body>
     <!--Header (Logo, Nav, SignUp)-->
-    <header class="flex flex-row flex-wrap h-fit">
-        <img class="h-12" src="img/booki_logo.svg" alt="Logo">
-        <nav class="h-max">
-            <a class="p-8 hover:border-t-4 hover:border-blue-600 hover:text-blue-600" href="#">Hébergement</a>
-            <a class="p-8 hover:border-t-4 hover:border-blue-600 hover:text-blue-600" href="#">Activités</a>
+    <header class="entete">
+        <img src="img/booki_logo.svg" alt="Logo">
+        <nav>
+            <a href="#">Hébergement</a>
+            <a href="#">Activités</a>
         </nav>
     </header>
-    <!--Fin header (Logo, Nav, SignUp)-->
+    <!--Fin header (Logo, Nav)-->
     <!--Main section-->
-    <main class="px-8">
-        
-            <header>
-                <h1 class="text-3xl font-bold">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="mb-4">En plein centre de ville ou en pleine nature</p>
+    <main>
+        <section>
+            <header class="titre">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre de ville ou en pleine nature</p>
             </header>
+            <form>
+                <span class="image">
+                    <img src="img/location-dot.svg" alt="logo find">
+                </span>
+                <input type="text" name="ville" id="ville" placeholder="Marseille, France">
+                <button type="submit">
+                    <span class="bouton">Rechercher</span>
+                    <img class="loupe" src="img/loupe.svg" alt="loupe">
+                </button>
+            </form>
+        </section>
         
     </main>
     
